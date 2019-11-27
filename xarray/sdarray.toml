@@ -4,7 +4,7 @@
 
 [t]
 dims = "t"
-type = "datetime64[ns]"
+dtype = "datetime64[ns]"
 default = "1970-01-01"
 options = []
 required = true
@@ -12,7 +12,7 @@ doc = "Time dimension."
 
 [ch]
 dims = "ch"
-type = "int"
+dtype = "int"
 default = 0
 options = []
 required = true
