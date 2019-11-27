@@ -1,0 +1,20 @@
+# specification of sdarray
+
+## dimensions
+
+[t]
+dims = "t"
+type = "datetime64[ns]"
+default = "1970-01-01"
+options = []
+required = true
+doc = "Time dimension."
+
+[ch]
+dims = "ch"
+type = "int"
+default = 0
+options = []
+required = true
+doc = "Channel dimension."
+
