@@ -12,7 +12,7 @@ doc = "Time dimension."
 
 [ch]
 dims = "ch"
-dtype = "int"
+dtype = "int64"
 default = 0
 options = []
 required = true
