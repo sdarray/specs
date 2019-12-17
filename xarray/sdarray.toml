@@ -125,3 +125,161 @@ default = false
 required = false
 doc = "Mask along channel dimension. Columns with true mask are intended to be eliminated."
 
+## coordinates related to time indices
+
+[sess_name]
+dims = "t"
+dtype = "str"
+default = ""
+required = false
+doc = "Session name."
+
+[sess_start]
+dims = "t"
+dtype = "datetime64[ns]"
+default = "1970-01-01"
+required = false
+doc = "Session start time."
+
+[sess_end]
+dims = "t"
+dtype = "datetime64[ns]"
+default = "1970-01-01"
+required = false
+doc = "Session end time."
+
+[sess_duration]
+dims = "t"
+dtype = "timedelta64[ns]"
+default = "0"
+required = false
+doc = "Session duration."
+
+[exec_name]
+dims = "t"
+dtype = "str"
+default = ""
+required = false
+doc = "Execution name."
+
+[exec_start]
+dims = "t"
+dtype = "datetime64[ns]"
+default = "1970-01-01"
+required = false
+doc = "Execution start time."
+
+[exec_end]
+dims = "t"
+dtype = "datetime64[ns]"
+default = "1970-01-01"
+required = false
+doc = "Execution end time."
+
+[exec_duration]
+dims = "t"
+dtype = "timedelta64[ns]"
+default = "0"
+required = false
+doc = "Execution duration."
+
+[scan_name]
+dims = "t"
+dtype = "str"
+default = ""
+required = false
+doc = "Scan name."
+
+[scan_intents]
+dims = "t"
+dtype = "str"
+default = ""
+required = false
+doc = "Scan intent names (comma separated)."
+
+[scan_fields]
+dims = "t"
+dtype = "str"
+default = ""
+required = false
+doc = "Scan field names (comma separated)."
+
+[scan_start]
+dims = "t"
+dtype = "datetime64[ns]"
+default = "1970-01-01"
+required = false
+doc = "Scan start time."
+
+[scan_end]
+dims = "t"
+dtype = "datetime64[ns]"
+default = "1970-01-01"
+required = false
+doc = "Scan end time."
+
+[scan_duration]
+dims = "t"
+dtype = "timedelta64[ns]"
+default = "0"
+required = false
+doc = "Scan duration."
+
+## coordinates related to channel indices
+
+[pix_name]
+dims = "ch"
+dtype = "str"
+default = ""
+required = false
+doc = "Pixel name."
+
+[pol_name]
+dims = "ch"
+dtype = "str"
+default = ""
+required = false
+doc = "Polarization name."
+
+[spw_name]
+dims = "ch"
+dtype = "str"
+default = ""
+required = false
+doc = "Spectral window name."
+
+[spw_min_freq]
+dims = "ch"
+dtype = "float64"
+default = "0.0"
+required = false
+doc = "Minimum frequency of SPW."
+
+[spw_max_freq]
+dims = "ch"
+dtype = "float64"
+default = "0.0"
+required = false
+doc = "Maximum frequency of SPW."
+
+[freq_center]
+dims = "ch"
+dtype = "float64"
+default = "0.0"
+required = false
+doc = "Frequency center of channel."
+
+[freq_width]
+dims = "ch"
+dtype = "float64"
+default = "0.0"
+required = false
+doc = "Frequency width of channel."
+
+[freq_resolution]
+dims = "ch"
+dtype = "float64"
+default = "0.0"
+required = false
+doc = "Frequency resolution of channel."
+
