@@ -1,6 +1,18 @@
 # specification of sdarray
 
-## dimensions
+## difinition of dimensions and indices
+
+[t_ids]
+dtype = "str"
+default = "t,sess,exec,scan"
+required = true
+doc = "Comma separated time ID names."
+
+[ch_ids]
+dtype = "str"
+default = "ch,pix,pol,spw,freq"
+required = true
+doc = "Comma separated channel ID names."
 
 [t]
 dims = "t"
