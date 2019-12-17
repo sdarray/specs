@@ -319,3 +319,56 @@ default = "0"
 required = false
 doc = "Interval time between samples."
 
+## coordinates that define (az, el) of each channel
+
+[az]
+dims = "t"
+dtype = "float64"
+default = "0.0"
+required = false
+doc = "Azimuth that defines the origin of relative horizontal coordinates."
+
+[el]
+dims = "t"
+dtype = "float64"
+default = "0.0"
+required = false
+doc = "Elevation that defines the origin of relative horizontal coordinates."
+
+[pix_x]
+dims = "ch"
+dtype = "float64"
+default = "0.0"
+required = false
+doc = """
+X (horizontal) axis of pixel coordinates.
+The origin is identical to that of relative horizontal coordinates.
+"""
+
+[pix_y]
+dims = "ch"
+dtype = "float64"
+default = "0.0"
+required = false
+doc = """
+Y (vertical) axis of pixel coordinates.
+The origin is identical to that of relative horizontal coordinates.
+"""
+
+[rho]
+dims = "t"
+dtype = "float64"
+default = "0.0"
+required = false
+doc = """
+Rotation angle between pixel and relative horizontal coordinates.
+When rho=0, dAz and dEl axes are identical to x and y axes, respectively.
+"""
+
+[v_rad]
+dims = "t"
+dtype = "float64"
+default = "0.0"
+required = false
+doc = "Radial velocity."
+
