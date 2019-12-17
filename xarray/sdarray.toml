@@ -14,6 +14,8 @@ default = "ch,pix,pol,spw,freq"
 required = true
 doc = "Comma separated channel ID names."
 
+## dimensions of sdarray
+
 [t]
 dims = "t"
 dtype = "datetime64[ns]"
@@ -28,7 +30,7 @@ default = 0
 required = true
 doc = "Channel dimension."
 
-## indices
+## indices of sdarray
 
 [sess]
 dims = "t"
