@@ -21,14 +21,14 @@ dims = "t"
 dtype = "datetime64[ns]"
 default = "1970-01-01"
 required = true
-doc = "Time dimension."
+doc = "Time dimension (ID)."
 
 [ch]
 dims = "ch"
 dtype = "int64"
 default = 0
 required = true
-doc = "Channel dimension."
+doc = "Channel dimension (ID)."
 
 ## indices of sdarray
 
@@ -37,21 +37,30 @@ dims = "t"
 dtype = "int64"
 default = "0"
 required = true
-doc = "Session ID. It is an unit of an observation."
+doc = """
+Session ID.
+It is an unit of an observation.
+"""
 
 [exec]
 dims = "t"
 dtype = "int64"
 default = "0"
 required = true
-doc = "Execution ID. It is an unit of observed data."
+doc = """
+Execution ID.
+It is an unit of observed data.
+"""
 
 [scan]
 dims = "t"
 dtype = "int64"
 default = "0"
 required = true
-doc = "Scan ID. It is the minimum unit of time-series data."
+doc = """
+Scan ID.
+It is the minimum unit of time-series data.
+"""
 
 [pix]
 dims = "ch"
@@ -95,14 +104,20 @@ dims = "t"
 dtype = "float64"
 default = "1.0"
 required = false
-doc = "Weight along time dimension. Rows with greater weights are intended to count more."
+doc = """
+Weight along time dimension.
+Rows with greater weights are intended to count more.
+"""
 
 [t_mask]
 dims = "t"
 dtype = "bool"
 default = false
 required = false
-doc = "Mask along time dimension. Rows with true mask are intended to be eliminated."
+doc = """
+Mask along time dimension.
+Rows with true mask are intended to be eliminated.
+"""
 
 [ch_name]
 dims = "ch"
@@ -116,14 +131,19 @@ dims = "ch"
 dtype = "float64"
 default = "1.0"
 required = false
-doc = "Weight along channel dimension. Columns with greater weights are indended to count more."
+doc = """
+Weight along channel dimension.
+Columns with greater weights are indended to count more.
+"""
 
 [ch_mask]
 dims = "ch"
 dtype = "bool"
 default = false
 required = false
-doc = "Mask along channel dimension. Columns with true mask are intended to be eliminated."
+doc = """Mask along channel dimension.
+Columns with true mask are intended to be eliminated.
+"""
 
 ## coordinates related to time indices
 
