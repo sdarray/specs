@@ -303,3 +303,19 @@ default = "0.0"
 required = false
 doc = "Frequency resolution of channel."
 
+## coordinates that define data sampling along time
+
+[exposure]
+dims = "t"
+dtype = "timedelta64[ns]"
+default = "0"
+required = false
+doc = "Exposure time of each sample."
+
+[interval]
+dims = "t"
+dtype = "timedelta64[ns]"
+default = "0"
+required = false
+doc = "Interval time between samples."
+
