@@ -1,5 +1,4 @@
 # standard library
-import os
 from pathlib import Path
 
 # dependent packages
