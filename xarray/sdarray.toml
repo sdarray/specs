@@ -372,3 +372,40 @@ default = "0.0"
 required = false
 doc = "Radial velocity."
 
+## coordinates of no dimension (i.e., header information)
+
+[project]
+dtype = "str"
+default = ""
+required = false
+doc = "Project ID."
+
+[observer]
+dtype = "str"
+default = ""
+required = false
+doc = "Name of observer."
+
+[telescope]
+dtype = "str"
+default = ""
+required = false
+doc = "Name of telescope."
+
+[frontend]
+dtype = "str"
+default = ""
+required = false
+doc = "Name of frontend instrument."
+
+[backend]
+dtype = "str"
+default = ""
+required = false
+doc = "Name of backend instrument."
+
+[object]
+dtype = "str"
+default = ""
+required = false
+doc = "Name of observed object."
