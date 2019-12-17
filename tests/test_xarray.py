@@ -15,7 +15,7 @@ def test_sdarray(filename="sdarray.toml"):
     with open(DIR_PATH / filename) as f:
         specs = toml.load(f)
 
-    for item in specs.values():
-        keys = set(item.keys())
+    for info in specs.values():
+        keys = set(info.keys())
         assert KEYS_REQUIRED <= keys
         assert (keys - KEYS_REQUIRED) <= KEYS_OPTIONAL
