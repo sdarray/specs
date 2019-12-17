@@ -1,0 +1,21 @@
+[requires]
+python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true
+
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[packages]
+
+[dev-packages]
+toml = "*"
+pytest = "*"
+black = "*"
+flake8 = "*"
+
+[scripts]
+configure = "scripts/configure"
