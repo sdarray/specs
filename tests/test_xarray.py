@@ -6,13 +6,13 @@ from pathlib import Path
 import toml
 
 # constants
-PATH = Path(os.environ["PROJECT_PATH"]) / "xarray"
+DIR_PATH = Path("xarray")
 KEYS_REQUIRED = {"dtype", "default", "required", "doc"}
 KEYS_OPTIONAL = {"dims", "option"}
 
 
 def test_sdarray(filename="sdarray.toml"):
-    with open(PATH / filename) as f:
+    with open(DIR_PATH / filename) as f:
         specs = toml.load(f)
 
     for item in specs.values():

@@ -1,11 +1,6 @@
 #!/bin/bash
 
 PROJECT_PATH=$(pipenv --where 2>/dev/null)
-
-cat << EOS >> ${PROJECT_PATH}/.env
-PROJECT_PATH=${PROJECT_PATH}
-EOS
-
 mkdir -p ${PROJECT_PATH}/.vscode
 
 cat << EOS > ${PROJECT_PATH}/.vscode/settings.json
