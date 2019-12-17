@@ -18,3 +18,60 @@ options = []
 required = true
 doc = "Channel dimension."
 
+## indices
+
+[sess]
+dims = "t"
+dtype = "int64"
+default = "0"
+options = []
+required = true
+doc = "Session ID. It is an unit of an observation."
+
+[exec]
+dims = "t"
+dtype = "int64"
+default = "0"
+options = []
+required = true
+doc = "Execution ID. It is an unit of observed data."
+
+[scan]
+dims = "t"
+dtype = "int64"
+default = "0"
+options = []
+required = true
+doc = "Scan ID. It is the minimum unit of time-series data."
+
+[pix]
+dims = "ch"
+dtype = "int64"
+default = "0"
+options = []
+required = true
+doc = "Spatial pixel ID."
+
+[pol]
+dims = "ch"
+dtype = "int64"
+default = "0"
+options = []
+required = true
+doc = "Polarization ID."
+
+[spw]
+dims = "ch"
+dtype = "int64"
+default = "0"
+options = []
+required = true
+doc = "Spectral window ID."
+
+[freq]
+dims = "ch"
+dtype = "int64"
+default = "0"
+options = []
+required = true
+doc = "Frequency ID."
